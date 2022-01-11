@@ -1,0 +1,20 @@
+.product-div {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem 0;
+}
+
+img {
+  margin: 10px;
+}
+
+.product-div .desc {
+  padding: 0 1rem;
+}
+
+.product-div .desc .product-title {
+  color: blue;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
