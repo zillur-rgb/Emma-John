@@ -18,3 +18,16 @@ img {
   font-weight: 400;
   font-size: 1.2rem;
 }
+
+.btn-cart {
+  margin: 10px 0;
+  background-color: #f7cb35;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-cart:hover {
+  background-color: #f0b905;
+}
