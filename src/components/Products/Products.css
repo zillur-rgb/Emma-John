@@ -1,9 +1,0 @@
-.product-container {
-  display: flex;
-}
-
-.product-part {
-  max-width: 70%;
-  margin: 0 2%;
-  border-right: 1px solid lightgray;
-}
