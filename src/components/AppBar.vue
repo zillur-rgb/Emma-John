@@ -1,9 +1,12 @@
 <template>
   <v-app-bar>
-    <text-h5>Actindo Core</text-h5>
+    <v-app-bar-title>Actindo Core</v-app-bar-title>
     <v-spacer></v-spacer>
-    <text-h5>OMS - Document List</text-h5>
+    <v-app-bar-title class="font-weight-black"
+      >OMS - Document List</v-app-bar-title
+    >
     <v-spacer></v-spacer>
+
     <v-icon icon="mdi:mdi-check-circle-outline" />
     <v-icon icon="mdi:mdi-help-circle" />
     <v-icon icon="mdi:mdi-circle-outline" />
@@ -13,8 +16,9 @@
   </v-app-bar>
 </template>
 <script></script>
-<style>
+<style scoped>
 .v-icon {
   margin: 0 10px;
+  cursor: pointer;
 }
 </style>
