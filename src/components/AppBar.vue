@@ -7,18 +7,34 @@
     >
     <v-spacer></v-spacer>
 
-    <v-icon icon="mdi:mdi-check-circle-outline" />
-    <v-icon icon="mdi:mdi-help-circle" />
-    <v-icon icon="mdi:mdi-circle-outline" />
-    <v-icon icon="mdi:mdi-bell" />
-    <v-icon icon="mdi:mdi-cog" />
-    <v-icon icon="mdi:mdi-account-circle" />
+    <v-icon v-for="({ name }, index) in icons" :icon="name" :key="index" />
   </v-app-bar>
 </template>
-<script></script>
+<script lang="ts">
+import { Ref, ref } from 'vue'
+
+export default {
+  setup() {
+    const icons: { name: string }[] = [
+      { name: 'mdi:mdi-check-circle-outline' },
+      { name: 'mdi:mdi-help-circle' },
+      { name: 'mdi:mdi-circle-outline' },
+      { name: 'mdi:mdi-bell' },
+      { name: 'mdi:mdi-cog' },
+      { name: 'mdi:mdi-account-circle' },
+    ]
+
+    return { icons }
+  },
+}
+</script>
 <style scoped>
 .v-icon {
   margin: 0 10px;
   cursor: pointer;
+}
+
+.v-icon:hover {
+  opacity: 0.7;
 }
 </style>
