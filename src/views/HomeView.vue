@@ -1,7 +1,10 @@
 <template>
   <!-- <hello-world /> -->
   <app-bar />
-  <Homepage />
+  <div class="h-screen d-flex">
+    <LeftNavbar />
+    <Homepage />
+  </div>
 </template>
 
 <script lang="ts">
@@ -11,6 +14,7 @@ import { defineComponent } from 'vue'
 import HelloWorld from '../components/HelloWorld.vue'
 import AppBar from '../components/AppBar.vue'
 import Homepage from '../components/Homepage.vue'
+import LeftNavbar from '../components/LeftNavbar.vue'
 
 export default defineComponent({
   name: 'HomeView',
@@ -19,6 +23,7 @@ export default defineComponent({
     HelloWorld,
     AppBar,
     Homepage,
+    LeftNavbar,
   },
 })
 </script>
